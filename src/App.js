@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from "./component/Dashboard";
 import NavBar from "./component/NavBar";
+import Soon from "./component/Soon";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
           <NavBar />
           <Routes>
             <Route path="/" element={<Dashboard />} />
+            <Route path="/soon" element={<Soon />} />
           </Routes>
         </div>
       </Router>
